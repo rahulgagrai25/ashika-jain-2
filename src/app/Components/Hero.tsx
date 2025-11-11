@@ -6,24 +6,24 @@ function Hero() {
 
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Mountain Adventure",
-      description: "Explore the breathtaking beauty of nature"
+      image: "",
+      title: "Imag 1",
+      description: ""
     },
     {
-      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Northern Lights",
-      description: "Witness the magical aurora borealis"
+      image: "",
+      title: "Image 2",
+      description: ""
     },
     {
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-      title: "Scenic Landscape",
-      description: "Discover hidden gems around the world"
+      image: "",
+      title: "Image 3",
+      description: ""
     },
     {
-      image: "https://images.unsplash.com/photo-1682686581854-5e71f58e7e3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Ocean Paradise",
-      description: "Relax and unwind in tropical destinations"
+      image: "",
+      title: "Image 4",
+      description: ""
     }
   ];
 
@@ -63,16 +63,16 @@ function Hero() {
             />
             
             {/* Text Content */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-black text-center px-4">
               <h1 className="poiret-font text-2xl md:text-6xl font-light mb-2 md:mb-4 transform transition-all duration-500 delay-200">
                 {slide.title}
               </h1>
               <p className="lato-font text-sm md:text-2xl mb-4 md:mb-8 max-w-2xl transform transition-all duration-500 delay-300 px-2">
                 {slide.description}
               </p>
-              <button className="bg-[#377e83] hover:bg-[#5ab5b6] text-white px-6 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-lg font-semibold transform transition-all duration-500 hover:scale-105">
+              {/* <button className="bg-[#377e83] hover:bg-[#5ab5b6] text-white px-6 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-lg font-semibold transform transition-all duration-500 hover:scale-105">
                 Explore More
-              </button>
+              </button> */}
             </div>
           </div>
         ))}
