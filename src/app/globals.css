@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap');
+
+/* Colors */
+:root {
+  --color-cararra-50:  #f7f7f3;
+  --color-cararra-100: #ecece3;
+  --color-cararra-200: #cfcfb8;
+  --color-cararra-300: #b6b593;
+  --color-cararra-400: #a5a27a;
+  --color-cararra-500: #978f69;
+  --color-cararra-600: #84795b;
+  --color-cararra-700: #6f634e;
+  --color-cararra-800: #5d5243;
+  --color-cararra-900: #4e4539;
+  --color-cararra-950: #2b251d;
+}
+
+/* Fonts */
+.poiret-font {
+  font-family: "Poiret One", sans-serif;
+
+}
+.lato-font {
+  font-family: "Lato", sans-serif;
+}
