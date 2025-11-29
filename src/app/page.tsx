@@ -1,12 +1,10 @@
-import Hero from "./Components/Hero";
-import Preloader from "./Components/Preloader";
 import "./globals.css";
+import Hero from "./components/hero";
 
 export default function Home() {
   return (
     <>
-    <Preloader/>
-    <Hero/>
+      <Hero />
     </>
   );
 }

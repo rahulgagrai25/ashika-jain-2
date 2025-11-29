@@ -1,6 +1,12 @@
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
 import "./globals.css";
+import Navbar from "./components/navbar";
+import { Lato } from "next/font/google";
+
+const lato = Lato({
+  weight: ["100", "300", "400", "700", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
@@ -9,10 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Navbar/>
+      <body className={lato.className}>
+        <Navbar />
         {children}
-        <Footer/>
       </body>
     </html>
   );
