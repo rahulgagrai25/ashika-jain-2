@@ -1,102 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --main-font: "MainFont", sans-serif;
-  --background: #ffffff;
-  --accent-color: #5fcfc3;
-}
-
-@theme {
-  --color-accent-color: #5fcfc3;
+@font-face {
+  font-family: 'Evolve';
+  src: url('/font/Evolve.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "MainFont";
-  src: url("/fonts/Masvis.woff") format("woff");
+  font-family: 'Tan';
+  src: url('/font/Tan.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap; /* prevents layout shift */
+  font-display: swap;
 }
 
-/* Custom Animations */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+:root {
+  --font-tan: 'Tan', sans-serif;
+  --font-evolve: 'Evolve', sans-serif;
+  
+  /* Colors */
+  --color-light-cyan: #f8feff;
+  --color-light-blue-green: #e4f2f2;
+  --color-dark: #221f23;
 }
 
-@keyframes fade-in-delay {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  50% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.heading{
+  font-family: 'Tan', sans-serif;
 }
 
-@keyframes bounce-slow {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+.text {
+  font-family: 'Evolve', sans-serif;
 }
 
-@keyframes fade-in-left {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Color utility classes */
+.bg-light-cyan {
+  background-color: var(--color-light-cyan);
 }
 
-.animate-fade-in {
-  animation: fade-in 0.6s ease-out forwards;
+.bg-light-blue-green {
+  background-color: var(--color-light-blue-green);
 }
 
-.animate-fade-in-delay {
-  animation: fade-in-delay 0.8s ease-out forwards;
-}
-
-.animate-fade-in-left {
-  animation: fade-in-left 0.7s ease-out forwards;
-}
-
-.animate-bounce-slow {
-  animation: bounce-slow 4s ease-in-out infinite;
-}
-
-.delay-1000 {
-  animation-delay: 1s;
-}
-
-.delay-500 {
-  animation-delay: 0.5s;
-}
-
-/* Touch optimization for mobile */
-button {
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Improve text rendering on mobile */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.dark {
+  color: var(--color-dark);
 }
